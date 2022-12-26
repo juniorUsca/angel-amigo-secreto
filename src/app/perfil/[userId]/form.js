@@ -1,10 +1,11 @@
 'use client'
 
+import Link from 'next/link'
 import { useState } from 'react'
 import { guardarPerfil } from '../../../services/participantes'
 
 export default function FormPerfil ({
-  id,
+  id, mostrarAngel, codigo,
   nombre, regalo1, regalo2, regalo3, perfil,
 }) {
   const [success, setSuccess] = useState(false)
@@ -40,7 +41,6 @@ export default function FormPerfil ({
           <p>
             Para conocernos mejor entre todos primero llena algunos de tus datos
           </p>
-
           <form className="mt-8 text-left" onSubmit={handleSubmit}>
             <div>
               <label
@@ -151,6 +151,15 @@ export default function FormPerfil ({
               </div>
             )}
           </form>
+          {mostrarAngel && (
+            <Link
+              href={`/perfil/${codigo}/angel`}
+                // eslint-disable-next-line max-len
+              className="inline-block mt-4 rounded-lg bg-pink-400 text-white text-sm font-medium p-4 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 max-w-full w-96"
+            >
+              Ver de quién soy el angel secreto
+            </Link>
+          )}
         </div>
       </div>
     </div>

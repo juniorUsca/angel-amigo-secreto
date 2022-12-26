@@ -21,7 +21,23 @@ export const guardarPerfil = async ({
 export const buscarPerfil = async ({ codigo }) => {
   const { data, error } = await supabase
     .from('participantes')
-    .select()
+    .select(`
+      id,
+      nombre,
+      regalo1,
+      regalo2,
+      regalo3,
+      perfil,
+      foto,
+      angel (
+        nombre,
+        foto,
+        regalo1,
+        regalo2,
+        regalo3,
+        perfil
+      )
+    `)
     .eq('codigo', codigo)
 
   console.log(data, error)
@@ -37,4 +53,20 @@ export const buscarPerfil = async ({ codigo }) => {
   }
 
   return data[0]
+}
+
+export const listaParticipantes = async () => {
+  const { data, error } = await supabase
+    .from('participantes')
+    .select(`
+      nombre
+    `)
+
+  console.log(data, error)
+
+  if (error) {
+    throw new Error(error)
+  }
+
+  return data
 }
