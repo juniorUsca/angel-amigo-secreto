@@ -1,4 +1,4 @@
-import obtenerJuego from 'services/juego'
+import { obtenerJuego } from '../../../services/juego'
 import { buscarPerfil } from '../../../services/participantes'
 import FormPerfil from './form'
 

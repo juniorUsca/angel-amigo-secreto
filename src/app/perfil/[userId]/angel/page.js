@@ -1,4 +1,4 @@
-import { buscarPerfil, listaParticipantes } from 'services/participantes'
+import { buscarPerfil, listaParticipantes } from '../../../../services/participantes'
 import Result from './result'
 
 export const revalidate = 0
