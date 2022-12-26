@@ -49,6 +49,7 @@ export default function FormPerfil ({
                 id="perfil"
                 name="perfil"
                 rows="8"
+                // eslint-disable-next-line max-len
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder=""
                 defaultValue={perfil}
@@ -75,6 +76,7 @@ export default function FormPerfil ({
                 type="text"
                 id="primer_opcion"
                 name="regalo1"
+                // eslint-disable-next-line max-len
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Ej. Un libro"
                 required
@@ -92,6 +94,7 @@ export default function FormPerfil ({
                 type="text"
                 id="segunda_opcion"
                 name="regalo2"
+                // eslint-disable-next-line max-len
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Ej. Una camiseta"
                 required
@@ -109,6 +112,7 @@ export default function FormPerfil ({
                 type="text"
                 id="tercera_opcion"
                 name="regalo3"
+                // eslint-disable-next-line max-len
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Ej. Un juego de mesa"
                 required
@@ -127,6 +131,7 @@ export default function FormPerfil ({
             <div className="mt-8 text-center">
               <button
                 type="submit"
+                // eslint-disable-next-line max-len
                 className="bg-indigo-600 text-white text-sm font-medium rounded-lg p-4 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-800 max-w-full w-96"
               >
                 Guardar
