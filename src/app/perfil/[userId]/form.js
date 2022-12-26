@@ -1,11 +1,14 @@
 'use client'
 
+import { useState } from 'react'
 import { guardarPerfil } from '../../../services/participantes'
 
 export default function FormPerfil ({
   id,
   nombre, regalo1, regalo2, regalo3, perfil,
 }) {
+  const [success, setSuccess] = useState(false)
+
   const handleSubmit = async event => {
     event.preventDefault()
     const data = new FormData(event.target)
@@ -18,6 +21,7 @@ export default function FormPerfil ({
         id,
         ...value,
       })
+      setSuccess(true)
     } catch (err) {
       console.log(err)
     }
@@ -137,6 +141,15 @@ export default function FormPerfil ({
                 Guardar
               </button>
             </div>
+            {success && (
+              <div
+                // eslint-disable-next-line max-len
+                className="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800 mt-8"
+                role="alert"
+              >
+                <span className="font-medium">Guardado con éxito!</span>
+              </div>
+            )}
           </form>
         </div>
       </div>
