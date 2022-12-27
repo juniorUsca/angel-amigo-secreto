@@ -90,7 +90,7 @@ export default function Result ({ participantes, angel }) {
         </div>
         {showAngel && (
           <>
-            <div className="block mt-12 md:flex text-center">
+            <div className="block mt-12 md:flex text-center justify-center">
               <div className="mr-8">
                 <img
                   className="w-48 h-48 rounded-xl object-cover block mx-auto"
