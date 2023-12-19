@@ -67,7 +67,7 @@ export default function FormPerfil ({
               <br />
               Mientras más específico seas, más fácil será que te regalen algo que te guste
               <br />
-              Recuerda que el precio del regalo puede ser entre los S/.20 y S/.40 soles aprox.
+              Recuerda que el precio del regalo puede ser hasta S/.30 soles aprox.
             </p>
             <div className="mt-4">
               <label
@@ -124,13 +124,13 @@ export default function FormPerfil ({
               />
             </div>
             <p className="mt-8 text-center text-gray-500">
-              El sorteo se realizará el lunes 26 de diciembre a las 7:00pm
+              {/* El sorteo se realizará el lunes 26 de diciembre a las 7:00pm */}
               <br />
-              Recarga esta página a esa hora para ver de quién eres el angel secreto.
+              {/* Recarga esta página a esa hora para ver de quién eres el angel secreto. */}
               <br />
-              Recuerda no compartir esta página con nadie,
+              Recuerda no compartir esta página con nadie 🤫
               <br />
-              para qué sea un secreto hasta el último momento. 🤫
+              {/* para qué sea un secreto hasta el último momento. 🤫 */}
             </p>
             <div className="mt-8 text-center">
               <button
@@ -158,6 +158,8 @@ export default function FormPerfil ({
               className="inline-block mt-4 rounded-lg bg-pink-400 text-white text-sm font-medium p-4 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 max-w-full w-96"
             >
               Ver de quién soy el angel secreto
+              <br />
+              A quien tengo q regalarle 🎁
             </Link>
           )}
         </div>
