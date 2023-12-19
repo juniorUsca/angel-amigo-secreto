@@ -67,7 +67,7 @@ export default function FormPerfil ({
               <br />
               Mientras más específico seas, más fácil será que te regalen algo que te guste
               <br />
-              Recuerda que el precio del regalo puede ser hasta S/.30 soles aprox.
+              Recuerda que el precio del regalo es S/.30 soles aprox.
             </p>
             <div className="mt-4">
               <label
