@@ -61,6 +61,7 @@ export const listaParticipantes = async () => {
     .select(`
       nombre
     `)
+    .eq('activo', true)
 
   console.log(data, error)
 
